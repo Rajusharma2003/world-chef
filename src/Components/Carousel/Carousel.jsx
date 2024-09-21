@@ -5,7 +5,11 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'aos/dist/aos.css'; // Import AOS styles
 import AOS from 'aos'; // Import AOS
 
-import wBanner1 from '../../Image/wBannerImg.jpg';
+// import image
+import banner1 from '../../Image/wmBanner1.jpg'
+import banner2 from '../../Image/wmBanner2.jpg'
+import banner3 from '../../Image/wmBanner3.jpg'
+
 
 
 function CarouselFadeExample() {
@@ -19,16 +23,16 @@ function CarouselFadeExample() {
       <Carousel fade className="relative  overflow-hidden">
         <Carousel.Item className="relative">
           <img
+            src={banner1}
             className="d-block w-full h-full object-cover"
-            src={wBanner1}
             alt="First slide"
-          />
+            />
         </Carousel.Item>
 
         <Carousel.Item className="relative">
           <img
             className="d-block w-full h-full object-cover"
-            src={wBanner1}
+            src={banner2}
             alt="Second slide"
           />
          
@@ -37,7 +41,7 @@ function CarouselFadeExample() {
         <Carousel.Item className="relative">
           <img
             className="d-block w-full h-full object-cover"
-            src={wBanner1}
+            src={banner3}
             alt="Third slide"
           />
          
